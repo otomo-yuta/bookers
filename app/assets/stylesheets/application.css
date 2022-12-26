@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #808080;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+/* 共通 */
+.wrapper {
+  margin-top: 25px;
+  margin-left: 35px;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.title-span {
+  margin: 0 10px;
+  font-size: inherit;
+}
+
+.title-contents,
+.body-contents {
+  margin-bottom: 10px;
+}
+
+.text-area,
+.text-field {
+  padding: 2px;
+}
+
+.text-area {
+  letter-spacing: 0.08em;
+  width: 160px;
+  height: 30px;
+}
+
+.label {
+  display: block;
+}
+
+.field_with_errors .label {
+  display: inline-block;
+  background-color: #f00;
+}
+
+.field_with_errors:has(.text-field),
+.field_with_errors:has(.text-area) {
+  display: inline-block;
+  border: solid 3px #f00;
+}
+
+.field_with_errors:has(.text-area) {
+  height: 35px;
+}
+
+/* validates */
+.validates {
+  max-width: 475px;
+  border: solid 3px #f00;
+  background: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.validates li {
+  list-style: square;
+}
+
+.validates-title {
+  background: #c00;
+  color: #fff;
+  padding: 5px 0;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.validates-contents {
+  padding: 30px 0;
+  padding-left: 75px;
+}
+
+/* top-page */
+.top_text-span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.top_content {
+  padding-left: 33px;
+}
+
+.top_content-text {
+  line-height: 4;
+  margin-bottom: 12px;
+}
+
+/* index-page */
+.table-contents td {
+  padding: 5px 10px 5px 0;
+}
+
+.table-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.new_contents {
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.create-button {
+  display: block;
+  padding: 2px 5px;
+}
+
+.flash_index {
+  margin-bottom: 30px;
+  color: #007700;
+}
+
+/* show-page */
+.show_contents {
+  padding-top: 7px;
+  padding-left: 30px
+}
+
+.data-lists dt {
+  font-weight: bold;
+}
+
+.data-lists dt,
+.data-lists dd {
+  display: inline-block;
+}
+
+.show_title-contents,
+.show_body-contents {
+  margin-bottom: 32px;
+}
+
+.show_edit-link {
+  position: relative;
+  margin-right: 8px;
+}
+
+.show_edit-link:after {
+  content: '';
+  width: 2px;
+  height: 70%;
+  background-color: #808080;
+  position: absolute;
+  top: 15%;
+  left: calc(100% + 8px);
+}
+
+.show_back-link {
+  margin-left: 3px
+}
+
+.flash_show {
+  margin-bottom: 30px;
+  color: #007700;
+  margin-left: 35px;
+}
+
+/* edit-page */
+.update-button {
+  display: block;
+  padding: 2px 5px;
+  margin-bottom: 10px;
+}
+
+.edit_show-link {
+  position: relative;
+  margin-right: 8px;
+}
+
+.edit_show-link:after {
+  content: '';
+  width: 1px;
+  height: 70%;
+  background-color: #808080;
+  position: absolute;
+  top: 15%;
+  left: calc(100% + 5px);
+}
+
+.edit_back-link {
+  margin-left: 3px
+}

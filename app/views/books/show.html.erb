@@ -1,0 +1,29 @@
+<!-- flash -->
+<div>
+  <p class="flash_show">
+    <%= flash[:notice] %>
+  </p>
+</div>
+
+<div class="show_contents">
+  <dl class="data-lists">
+    <div class="show_title-contents">
+      <dt>Title:</dt>
+      <dd>
+        <%= @book.title %>
+      </dd>
+    </div>
+
+    <div class="show_body-contents">
+      <dt>Body:</dt>
+      <dd>
+        <%= @book.body %>
+      </dd>
+    
+    </div>
+</dl>
+
+</div>
+
+<%= link_to "Edit", edit_book_path(@book.id), class: "show_edit-link" %>
+<%= link_to "Back", books_path, class: "show_back-link" %>
